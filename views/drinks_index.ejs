@@ -8,7 +8,7 @@
     <style type="text/css">
         body {
         color: rgb(255, 223, 175);
-        background-color: rgb(49, 65, 78);
+        background-color: rgb(173, 218, 255);
         }
     </style>
 </head>
@@ -17,7 +17,7 @@
     <ul>
         <% drinks.forEach((drink, index) => { %>
             
-            <li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1)  %> </li>
+        <a href="/drinks/<%= index %>"><li><%= drink.name.charAt(0).toUpperCase() + drink.name.slice(1)  %> </li></a>
         
         <% }) %>
         
