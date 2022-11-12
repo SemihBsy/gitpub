@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Pub</title>
+    <style type="text/css">
+        body {
+        color: rgb(254, 98, 98);
+        background-color: rgb(173, 237, 255);
+        }
+        span{
+            color: darkolivegreen;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Welcome to gitPub</h1>
+    <h2>Drink Menu:</h2>
+    <ul>
+        <% drinks.forEach((drink, index) => { %>
+            <li>
+                <a href="/drinks/<%=index%>"><span><%=drink.name.charAt(0).toUpperCase() + drink.name.slice(1) %></a></span>
+            </li><br>
+        <% }) %>
+    </ul>
+    <h2>Food Menu:</h2>
+    <ul>
+        <% food.forEach((food, index) => { %>
+            <li>
+                <a href="/food/<%=index%>"><span><%=food.name%></a></span>
+            </li><br>
+    <% }) %>
+    </ul>
+    
+</body>
+</html>
